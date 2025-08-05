@@ -28,7 +28,7 @@ function Home() {
               bringing ideas to life<br/> through coding.
             </p>
 
-            <div className="flex lg:justify-between min-w-[15rem] flex-wrap gap-6 mt-9 text-xl ">
+            <div className="flex  min-w-[15rem] flex-wrap gap-6 mt-9 text-xl ">
             <button className=" px-10 py-3 rounded-4xl text-white font-semibold cursor-pointer home-button-1">
               Download cv
             </button>
@@ -36,7 +36,7 @@ function Home() {
               className="border-2 text-white px-10 py-3 rounded-4xl cursor-pointer home-button-2"
               style={{ borderColor: "oklch(0.65 0.17 254.68)" }}
             >
-              See my work <ArrowRight className={"inline ml-4"} />
+              Works <ArrowRight className={"inline ml-4"} />
             </button>
           </div>
           </div>

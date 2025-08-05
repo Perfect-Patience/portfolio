@@ -51,14 +51,14 @@ function NavBar() {
           <NavLink to={"about"}>About</NavLink>
           <NavLink to={"portfolio"}>Portfolio</NavLink>
           <NavLink to={"contact"}>Contact</NavLink>
-          <div className="flex flex-col items-start gap-8">
+          {/* <div className="flex flex-col items-start gap-8">
             <button className=" bg-blue-700 px-6 py-2 rounded-3xl text-white">
               Download CV
             </button>
             <button className=" bg-blue-900 px-6 py-2 rounded-3xl text-white">
               Contanct Me
             </button>
-          </div>
+          </div> */}
         </ul>
       
       </div>
