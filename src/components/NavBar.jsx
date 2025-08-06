@@ -41,7 +41,7 @@ function NavBar() {
           <NavLink to={"contact"}>Contact</NavLink>
         </nav>
       </div>
-      <div className="md:hidden  flex flex-col">
+      <div className="md:hidden  flex flex-col overflow-x-hidden">
        <button onClick={() => toggleHamburger()}> {
           showMenu? <OutlineClose className={"text-3xl text-white"} /> :
         <HamburgerMenu className={"text-3xl text-white"}  />

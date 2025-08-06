@@ -6,17 +6,12 @@ import linkedIn from "../assets/linkedInIcon.png";
 
 function Home() {
   return (
-    <section className="home-gradient items-center flex pb-10 md:px-3 ">
+    <section className="home-gradient  items-center flex pb-10 md:px-3 ">
       <div className=" flex lg:flex-row flex-col w-full lg:px-30  gap-25 max-w-[1800px] mx-auto mt-13 lg:mt-auto    justify-center relative lg:justify-between  items-center">
         <div className=" flex flex-col justify-center md:items-center mx-6 md:mx-0 lg:items-start md:w-full lg:w-fit md:m-auto  lg:m-0">
           <div className="flex flex-col gap-8  lg:text-left">
-            <p
-              className="text-2xl md:text-4xl lg:text-2xl "
-              style={{ color: "oklch(0.63 0.15 255.84)" }}
-            >
-              Welcome to my portfolio
-            </p>
-            <p className="lg:text-7xl md:text-6xl text-2xl font-semibold text-white ">
+           
+            <p className="lg:text-8xl md:text-6xl text-4xl font-semibold text-white ">
               Hello, my <br /> name's{" "}
               <span className="" style={{ color: "oklch(0.62 0.19 256.92)" }}>
                 Perfect
@@ -28,12 +23,12 @@ function Home() {
               bringing ideas to life<br/> through coding.
             </p>
 
-            <div className="flex  min-w-[15rem] flex-wrap gap-6 mt-9 text-xl ">
-            <button className=" px-10 py-3 rounded-4xl text-white font-semibold cursor-pointer home-button-1">
+            <div className="flex   flex-wrap md:flex-row flex-col gap-6 lg:mt-9 text-xl ">
+            <button className=" w-[220px] py-3 rounded-4xl text-white font-semibold cursor-pointer home-button-1">
               Download cv
             </button>
             <button
-              className="border-2 text-white px-10 py-3 rounded-4xl cursor-pointer home-button-2"
+              className="border-2 text-white w-[220px] py-3 rounded-4xl cursor-pointer home-button-2"
               style={{ borderColor: "oklch(0.65 0.17 254.68)" }}
             >
               Works <ArrowRight className={"inline ml-4"} />
@@ -58,7 +53,7 @@ function Home() {
             }}
           >
             <div
-              className="lg:w-[24rem] lg:h-[36rem] md:w-[25rem] md:h-[35rem] w-[15rem] h-[25rem] flex items-center justify-center"
+              className="lg:w-[22rem] lg:h-[32rem] md:w-[25rem] md:h-[35rem] w-[15rem] h-[25rem] flex items-center justify-center"
               style={{
                 borderRadius: "12rem",
                 backgroundColor: "oklch(0.65 0.15 253.71)",
