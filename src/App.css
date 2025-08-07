@@ -41,3 +41,19 @@
     
 }
 
+.name-span{
+    width: 100%;
+    white-space: no-wrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(8),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes typing {
+    from {width: 0}
+}
