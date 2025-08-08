@@ -28,10 +28,6 @@ const router = createBrowserRouter([
         Component: Portfolio
       },
       {
-        path: "/resume",
-        Component: Resume
-      },
-      {
           path: "/contact",
           Component: Contact
       }

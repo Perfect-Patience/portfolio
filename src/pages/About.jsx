@@ -2,6 +2,18 @@ import React from 'react'
 import { UserCheck } from '../assets/icons'
 
 function About() {
+  const stack = [
+    "React",
+    "tailwind css",
+    "Express",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Figma",
+    "AWS",
+    "MongoDb",
+    "MySQL",
+  ];
   return (
     <section className='home-gradient pb-15'>
       <div className='max-w-[1200px]  mx-auto px-4 mt-10'>
@@ -47,6 +59,17 @@ function About() {
           </div>
         </div>
       </div>
+       <div className="flex gap-25 mt-25 text-white">
+                <div className="shrink-0">
+                  <h4 className="text-3xl font-medium">Tech Stack</h4>
+                  <p className="uppercase text-lg mt-1">Tools and Technologies</p>
+                </div>
+                <div className="flex gap-8 w-full flex-wrap">
+                  {stack.map((tech) => (
+                    <img className="w-12" src={`src/assets/${tech}.svg`} />
+                  ))}
+                </div>
+              </div>
       </div>
     </section>
   )
