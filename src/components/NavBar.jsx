@@ -2,10 +2,18 @@ import React, { useState } from "react";
 import { NavLink } from "react-router";
 import logo from "../assets/portfolioLogo.svg";
 import { HamburgerMenu, OutlineClose } from "../assets/icons";
-
+import { useEffect } from "react";
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false)
- 
+ const [scrolled, setScrolled] = useState(false);
+
+ useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
  function toggleHamburger(){
   
     const menu =  document.querySelector('.hamburger-dropdown');
@@ -29,16 +37,17 @@ function NavBar() {
  }
 
   return (
-    <div className="absolute  w-full h-[5rem]  top-0 left-0 z-40 md:px-15 lg:px-20 px-5 flex justify-between items-center ">
+    <div className={` fixed w-full h-[5rem] top-0 left-0 z-40 md:px-15 lg:px-20 px-5 flex justify-between items-center  ${scrolled? "nav-bg" : ""}`}>
       <div className=" w-60">
         <img src={logo} alt="logo" />
       </div>
       <div className="md:block hidden">
         <nav className="flex gap-10 text-lg font-medium text-white">
           <NavLink to="/">Home</NavLink>
-          <NavLink to={"about"}>About</NavLink>
-          <NavLink to={"portfolio"}>Portfolio</NavLink>
-          <NavLink to={"contact"}>Contact</NavLink>
+          <NavLink to={"/about"}>About</NavLink>
+          <NavLink to={"/portfolio"}>Portfolio</NavLink>
+          <NavLink to={"/resume"}>Resume</NavLink>
+          <a href="mailto:patiencedah@gmail.com">Contact</a>
         </nav>
       </div>
       <div className="md:hidden  flex flex-col overflow-x-hidden">
@@ -50,7 +59,8 @@ function NavBar() {
           <NavLink to="/">Home</NavLink>
           <NavLink to={"about"}>About</NavLink>
           <NavLink to={"portfolio"}>Portfolio</NavLink>
-          <NavLink to={"contact"}>Contact</NavLink>
+          <NavLink to={"resume"}>Resume</NavLink>
+          <a href="mailto:patiencedah@gmail.com">Contact</a>
           {/* <div className="flex flex-col items-start gap-8">
             <button className=" bg-blue-700 px-6 py-2 rounded-3xl text-white">
               Download CV

@@ -6,7 +6,7 @@ import linkedIn from "../assets/linkedInIcon.png";
 
 function Home() {
   return (
-    <section className="home-gradient  items-center flex pb-10 md:px-3 ">
+    <section className="home-gradient  items-center flex pb-20 md:px-3 " id="home">
       <div className=" flex lg:flex-row flex-col w-full lg:px-30  gap-25 max-w-[1800px] mx-auto mt-13 lg:mt-auto    justify-center relative lg:justify-between  items-center">
         <div className=" flex flex-col justify-center md:items-center mx-6 md:mx-0 lg:items-start md:w-full lg:w-fit md:m-auto  lg:m-0">
           <div className="flex flex-col gap-8  lg:text-left">

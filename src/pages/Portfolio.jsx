@@ -30,9 +30,9 @@ const projects = [
 ]
 function Portfolio() {
   return (
-    <section className='home-gradient '>
+    <section className=' ' id="portfolio" style={{backgroundColor: "oklch(0.25 0.1 282.21)"}}>
       <div>
-        <div className='max-w-[1100px]  mx-auto px-4 mt-10'>
+        <div className='max-w-[1200px]  mx-auto px-4 pt-40 pb-20'>
         <div className='flex gap-6 items-center'>
         <h2 className='text-5xl text-white'>Portfolio</h2>
         <div className='w-full h-0.5 rounded-full' style={{ backgroundColor: "oklch(0.63 0.15 255.84)" }}></div>
