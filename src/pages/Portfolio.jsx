@@ -1,31 +1,40 @@
 import React from 'react'
 import ProjectTile1 from '../components/ProjectTile'
 import ProjectTile2 from '../components/ProjectTile2'
+
 const projects = [
   {
     title: "DevCollab",
     details: "A collaborative platform for developers to connect, join projects, and work together in real-time. Users can explore ongoing projects, request to join, and manage collaboration roles.",
-    stack: ["React", "HTML", "CSS"],
-    gitHub: "https://github.com/perfect-patience",
+    stack: ["React", "HTML", "CSS", "Firebase-Auth", "MongoDb"],
+    gitHub: "https://github.com/Perfect-Patience/devCollab",
     liveLink: "#",
-    media: "src/assets/devColab.mp4"
+    media: "./videos/devColab.mp4"
 
   },
   {
         title: "DevJobs",
-    details: "A movie browsing application that lets users search for movies, view details like ratings and descriptions, and watch trailers. Powered by a movie API for real-time data.",
-    stack: ["React", "HTML", "CSS"],
-    gitHub: "https://github.com/perfect-patience",
-    liveLink: "#",
-    media: "src/assets/devJobs.mp4",
+    details: "Devjobs is a simple web application that displays job offers available. It provides a user-friendly interface for users to browse and search for job opportunities.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    gitHub: "https://github.com/Perfect-Patience/devjobs",
+    liveLink: "https://devjobs-sable.vercel.app/",
+    media: "./videos/devJobs.mp4",
   },
   {
         title: "Movie APP",
     details: "A movie browsing application that lets users search for movies, view details like ratings and descriptions, and watch trailers. Powered by a movie API for real-time data.",
+    stack: ["React", "HTML", "CSS", "TMDB API"],
+    gitHub: "https://github.com/Perfect-Patience/movie-app",
+    liveLink: "https://perfect-patience-movie-app.netlify.app/",
+    media: "./videos/movie.mp4"
+  },
+  {
+    title:"Gadgets Shop",
+    details: "A modern React-based gadget store web app featuring a product catalog, dynamic search bar, and interactive shopping cart functionality. Built with clean CSS and Axios for data fetching.",
     stack: ["React", "HTML", "CSS"],
-    gitHub: "https://github.com/perfect-patience",
-    liveLink: "#",
-    media: ""
+    github: "https://github.com/Perfect-Patience/react-gadget-shop",
+    liveLink: "https://react-gadget-shop.netlify.app/",
+    media: "./videos/shop.mp4"
   }
 ]
 function Portfolio() {

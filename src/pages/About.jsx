@@ -1,5 +1,6 @@
 import React from "react";
 import { UserCheck } from "../assets/icons";
+import Typewriter from "typewriter-effect";
 
 function About() {
  
@@ -23,7 +24,7 @@ function About() {
               className="text-2xl font-semibold "
               style={{ color: "rgb(100, 255, 218)" }}
             >
-              Who I am
+             <Typewriter options={{strings: "Who am I?", autoStart:true, loop: true }}/>
             </h4>
             <ul className="flex flex-col gap-5 mt-5 lg:pl-20 text-lg lg:w-[80%]">
               <li className="flex gap-4 items-center">
@@ -77,7 +78,7 @@ function About() {
                 className="text-2xl font-semibold "
                 style={{ color: "rgb(100, 255, 218)" }}
               >
-                What I do
+                <Typewriter options={{strings: "What I do?", autoStart:true, loop: true }}/>
               </h4>
               <div className="flex justify-around gap-y-4 items-center flex-wrap mt-10">
                 <div
@@ -85,7 +86,7 @@ function About() {
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img
-                    src="src/assets/tag.png"
+                    src="./images/tag.png"
                     alt=""
                     className="mx-auto mb-3"
                   />
@@ -96,7 +97,7 @@ function About() {
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img
-                    src="src/assets/brackets.png"
+                    src="./images/brackets.png"
                     alt=""
                     className="mx-auto mb-3"
                   />
@@ -107,7 +108,7 @@ function About() {
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img
-                    src="src/assets/globe.png"
+                    src="./images/globe.png"
                     alt=""
                     className="mx-auto mb-3"
                   />
@@ -118,7 +119,7 @@ function About() {
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img
-                    src="src/assets/mobile.png"
+                    src="./images/mobile.png"
                     alt=""
                     className="mx-auto mb-3"
                   />

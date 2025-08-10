@@ -3,6 +3,9 @@ import profile from "../assets/art.png";
 import tagIcon from "../assets/tagicon3d.png";
 import github from "../assets/gitHubIcon.png";
 import linkedIn from "../assets/linkedInIcon.png";
+import resume from "../assets/Perfect Patience Dah CV.pdf";
+import { NavLink } from "react-router";
+import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
@@ -13,8 +16,8 @@ function Home() {
            
             <p className="lg:text-8xl md:text-6xl text-4xl font-semibold text-white ">
               Hello, my <br /> name's{" "}
-              <span className="" style={{ color: "oklch(0.62 0.19 256.92)" }}>
-                Perfect
+              <span className="inline-block" style={{ color: "oklch(0.62 0.19 256.92)" }}>
+               <Typewriter options={{strings: "Perfect", autoStart:true, loop:true}}/>
               </span>
               .
             </p>
@@ -24,15 +27,15 @@ function Home() {
             </p>
 
             <div className="flex   flex-wrap md:flex-row flex-col gap-6 lg:mt-9 text-xl ">
-            <button className=" w-[220px] py-3 rounded-4xl text-white font-semibold cursor-pointer home-button-1">
+            <a href={resume} download="resume" className=" w-[220px] py-3  flex items-center justify-center rounded-4xl text-white font-semibold cursor-pointer home-button-1">
               Download cv
-            </button>
-            <button
-              className="border-2 text-white w-[220px] py-3 rounded-4xl cursor-pointer home-button-2"
+            </a>
+            <NavLink to={"/portfolio"}
+              className="border-2 text-white w-[220px] py-3 rounded-4xl  cursor-pointer flex items-center justify-center home-button-2"
               style={{ borderColor: "oklch(0.65 0.17 254.68)" }}
             >
               Works <ArrowRight className={"inline ml-4"} />
-            </button>
+            </NavLink>
           </div>
           </div>
           

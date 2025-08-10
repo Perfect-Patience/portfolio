@@ -24,7 +24,7 @@ function ProjectTile1({project}) {
             <p className='uppercase  text-md text-xs md:text-right text-ceter ' style={{ color: "rgb(100, 255, 218)" }}>Featured Project</p>
             <p className='md:text-4xl text-xl md:text-right text-center'>{project.title}</p>
             <div className='relative '>
-                <div className=' px-4 py-4 md:w-[470px] text-sm md:text-[1.085rem] w-full md:absolute md:right-0 text-center' style={{backgroundColor: "rgb(17 34 64)"}}>
+                <div className=' px-4 py-4 md:w-[470px] text-sm md:text-[1.085rem] w-full md:absolute md:right-0 text-center rounded-md bg-purple-950'  >
                     {project.details}
                         </div>
             </div>
@@ -35,8 +35,8 @@ function ProjectTile1({project}) {
             </div>
 
             <div className="flex gap-6 text-xl">
-                <a href={project.gitHub} className="text-xl border-gray-500 border w-[100px] py-1 rounded-2xl flex items-center justify-center hover:bg-gray-800"> <GithubSolid className='inline mr-2 shrink-0 '/> Code</a>
-                <a href={project.liveLink} className="text-xl border-gray-500 border w-[100px] py-1 rounded-2xl flex items-center justify-center hover:bg-gray-800"><ComputerScreen1ScreenDeviceElectronicsMonitorDiplayComputer className='inline mr-2 shrink-0'/> Live</a>
+                <a href={project.gitHub}   target="_blank" className="text-xl  border-gray-500 border w-[100px] py-1 rounded-2xl flex items-center justify-center hover:bg-gray-800"> <GithubSolid className='inline mr-2 shrink-0 '/> Code</a>
+                <a href={project.liveLink} target="_blank" className="text-xl border-gray-500 border w-[100px] py-1 rounded-2xl flex items-center justify-center hover:bg-gray-800"><ComputerScreen1ScreenDeviceElectronicsMonitorDiplayComputer className='inline mr-2 shrink-0'/> Live</a>
             </div>
 
         </div>

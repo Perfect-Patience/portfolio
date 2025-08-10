@@ -3,14 +3,14 @@ import React from "react";
 function Resume() {
   const stack = [
     "React",
-    "tailwind css",
+    "Tailwind CSS",
     "Express",
     "JavaScript",
     "HTML5",
     "CSS3",
     "Figma",
     "AWS",
-    "MongoDb",
+    "MongoDB",
     "MySQL",
   ];
   return (
@@ -31,7 +31,7 @@ function Resume() {
           </div>
           <div className="flex gap-8 w-full flex-wrap">
             {stack.map((tech) => (
-              <img className="w-12" src={`src/assets/${tech}.svg`} />
+              <img className="w-12" src={`./tech-icons/${tech}.svg`} />
             ))}
           </div>
         </div>
