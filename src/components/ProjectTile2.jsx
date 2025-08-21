@@ -7,13 +7,13 @@ const videoRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // 1 = normal, 2 = 2x speed, 0.5 = half speed
+      videoRef.current.playbackRate = 1;
     }
   }, []);
 
   return (
     <div className='flex flex-row-reverse flex-wrap items-center w-full mt-15 ' >
-        <div className='sm:w-full md:w-2/3 h-fit border-2 rounded-lg' style={{borderColor: "oklch(0.63 0.15 255.84)"}}>
+        <div className='w-full md:w-2/3 h-fit border-2 rounded-lg' style={{borderColor: "oklch(0.63 0.15 255.84)"}}>
             <video autoPlay muted loop ref={videoRef} className='w-[100%] h-[100%] rounded-lg'>
                 <source src={project.media} type="video/mp4"/>
             </video>

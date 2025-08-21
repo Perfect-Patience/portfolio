@@ -23,7 +23,7 @@ const projects = [
   {
         title: "Movie APP",
     details: "A movie browsing application that lets users search for movies, view details like ratings and descriptions, and watch trailers. Powered by a movie API for real-time data.",
-    stack: ["React", "HTML", "CSS", "TMDB API"],
+    stack: ["React", "HTML", "TailwindCSS", "TMDB API"],
     gitHub: "https://github.com/Perfect-Patience/movie-app",
     liveLink: "https://perfect-patience-movie-app.netlify.app/",
     media: "./videos/movie.mp4"
@@ -31,7 +31,7 @@ const projects = [
   {
     title:"Gadgets Shop",
     details: "A modern React-based gadget store web app featuring a product catalog, dynamic search bar, and interactive shopping cart functionality. Built with clean CSS and Axios for data fetching.",
-    stack: ["React", "HTML", "CSS"],
+    stack: ["React", "HTML", "CSS", "NODEJS", "REST API"],
     github: "https://github.com/Perfect-Patience/react-gadget-shop",
     liveLink: "https://react-gadget-shop.netlify.app/",
     media: "./videos/shop.mp4"

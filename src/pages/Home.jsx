@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowRight } from "../assets/icons";
-import profile from "../assets/art.png";
+import profile from "../assets/file.svg";
 import tagIcon from "../assets/tagicon3d.png";
 import github from "../assets/gitHubIcon.png";
 import linkedIn from "../assets/linkedInIcon.png";
@@ -22,7 +22,7 @@ function Home() {
               .
             </p>
             <p className="md:text-3xl  lg:text-2xl font-light text-white mr-15 md:mr-0">
-              I'm a software developer from Ghana. <br />A passionate developer
+              I'm a software developer who is <br/>passionate about
               bringing ideas to life<br/> through coding.
             </p>
 
@@ -34,7 +34,7 @@ function Home() {
               className="border-2 text-white w-[220px] py-3 rounded-4xl  cursor-pointer flex items-center justify-center home-button-2"
               style={{ borderColor: "oklch(0.65 0.17 254.68)" }}
             >
-              Works <ArrowRight className={"inline ml-4"} />
+              My Works <ArrowRight className={"inline ml-4"} />
             </NavLink>
           </div>
           </div>

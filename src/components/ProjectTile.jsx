@@ -9,7 +9,7 @@ function ProjectTile1({project}) {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // 1 = normal, 2 = 2x speed, 0.5 = half speed
+      videoRef.current.playbackRate = 1; // 1 = normal, 2 = 2x speed, 0.5 = half speed
     }
   }, []);
 

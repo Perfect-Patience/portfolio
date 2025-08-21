@@ -33,7 +33,7 @@ function About() {
                 <p>
                   {" "}
                   I am a software developer focused on building user-centered
-                  products accross different sectors{" "}
+                  products across different sectors{" "}
                 </p>
               </li>
               <li className="flex gap-4 items-center">
@@ -68,7 +68,7 @@ function About() {
                 <UserCheck className="shrink-0 grow-0" />{" "}
                 <p>
                   I am currently honing my coding skills with{" "}
-                  <a>Developer's In Vouge</a>
+                  <a href="https://developersinvogue.org/" target="_blank" style={{color: "rgb(100, 255, 218)"}}>Developer's In Vouge</a>
                 </p>
               </li>
             </ul>
@@ -82,7 +82,7 @@ function About() {
               </h4>
               <div className="flex justify-around gap-y-4 items-center flex-wrap mt-10">
                 <div
-                  className="border px-2 py-6 rounded-2xl w-[180px] h-[165px]"
+                  className="border px-2 py-6 rounded-2xl w-[160px] md:w-[180px] h-[165px]"
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img
@@ -93,7 +93,7 @@ function About() {
                   <p className="text-center">Frontend Web Development</p>
                 </div>
                 <div
-                  className=" w-[180px] border  py-6 rounded-2xl h-[165px]"
+                  className=" w-[160px] border  py-6 rounded-2xl md:w-[180px] h-[165px]"
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img
@@ -104,7 +104,7 @@ function About() {
                   <p className="text-center">Backend Web Development</p>
                 </div>
                 <div
-                  className=" w-[180px] border  py-6 rounded-2xl h-[165px]"
+                  className=" w-[160px] border  py-6 rounded-2xl md:w-[180px] h-[165px]"
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img
@@ -115,7 +115,7 @@ function About() {
                   <p className="text-center">Full-Stack Web Development</p>
                 </div>
                 <div
-                  className=" w-[180px] border py-6 rounded-2xl h-[165px]"
+                  className=" w-[160px] border py-6 rounded-2xl md:w-[180px] h-[165px]"
                   style={{ borderColor: "oklch(0.63 0.15 255.84" }}
                 >
                   <img

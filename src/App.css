@@ -27,14 +27,19 @@
 }
 
 .hamburger-dropdown{
-    background: linear-gradient(135deg, rgb(19, 52, 77) 0%, rgb(20,28,68) 50%, hsl(250.82deg 58.1% 20.59%) 100%);
+    background: hsl(250.82deg 58.1% 20.59%);
     transition: left 350ms ease-in-out;
 }
+
+
 
 
 .hamburger-dropdown.show{
     left:0;
 }
+
+
+
 
 .hamburger-dropdown.hide{
     left:100vw;
@@ -56,4 +61,17 @@
 
 @keyframes typing {
     from {width: 0}
+}
+
+input:focus, textarea:focus{
+    border-color:oklch(0.65 0.17 254.68) ;
+}
+
+
+form button{
+    background-color: oklch(0.65 0.17 254.68);
+}
+
+.socials-link{
+    color: rgb(100, 255, 218) ;
 }
